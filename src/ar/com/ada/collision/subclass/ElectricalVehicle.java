@@ -34,7 +34,7 @@ public class ElectricalVehicle extends Vehicle {
         if(year < 2007){
             mensaje = "No existe modelo para este año";
         } else mensaje = "Es un auto de última tecnología!";
-        return mensaje + this.toString();
+        return this.toString() +  '\n' + mensaje;
 
     }
 
@@ -59,9 +59,9 @@ public class ElectricalVehicle extends Vehicle {
     public String toString() {
         return "Vehículo Deportivo "+
                 "Marca: " + this.brand +
-                "Modelo: " + this.model +
-                "Año:" + this.year +
-                "Potencia: " + this.potency;
+                " Modelo: " + this.model +
+                " Año: " + this.year +
+                " Potencia: " + this.potency;
     }
 
 }

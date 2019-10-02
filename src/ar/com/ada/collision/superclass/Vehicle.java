@@ -62,9 +62,9 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return "Vehículo "+
-                "Marca: " + this.brand +
-                "Modelo: " + this.model +
-                "Año:" + this.year;
+        return "Vehículo Simple "+
+                " Marca: " + this.brand +
+                " Modelo: " + this.model +
+                " Año: " + this.year;
     }
 }

@@ -27,16 +27,17 @@ public class SportsVehicle extends Vehicle {
 
     @Override
     public String technicalSheet() {
+        String mensaje = " ";
         if (rpm < 50) {
-            String mensaje = "El auto es muy bonito, pero sólo sirve para ir a pasear";
+            mensaje = "El auto es muy bonito, pero sólo sirve para ir a pasear";
         } else if (rpm < 300) {
-            String mensaje = "Con este auto puede desafiar a cualquiera en la pista";
+            mensaje = "Con este auto puede desafiar a cualquiera en la pista";
         } else if (rpm < 600) {
-            String mensaje = "si tienes este auto, debe considerar participar en NASCAR";
+            mensaje = "Si tienes este auto, debe considerar participar en NASCAR";
         } else if (rpm > 600) {
-            String mensaje = "¿Eres parte del elenco de Rápidos y Furiosos?";
+            mensaje = "¿Eres parte del elenco de Rápidos y Furiosos?";
         }
-        return this.toString() ;
+        return this.toString() + '\n' + mensaje;
 
     }
 
@@ -59,9 +60,9 @@ public class SportsVehicle extends Vehicle {
         @Override
         public String toString() {
             return "Vehículo Deportivo "+
-                    "Marca: " + brand + '\'' +
-                    ", Modelo:'" + model + '\'' +
-                    ", Año:=" + year;
+                    " Marca: " + brand +
+                    " Modelo: " + model +
+                    " Año: " + year;
         }
 
 }

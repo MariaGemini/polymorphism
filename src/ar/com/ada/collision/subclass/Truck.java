@@ -1,5 +1,4 @@
 package ar.com.ada.collision.subclass;
-
 import ar.com.ada.collision.superclass.Vehicle;
 
 import java.util.Objects;
@@ -28,11 +27,18 @@ public class Truck extends Vehicle {
         return maxLoad;
     }
 
-    // @Override
-    //   public int technicalSheet(){
-    //     return x;
 
-    //}
+    @Override
+    public String technicalSheet() {
+        String mensaje = " ";
+        if ( maxLoad <= 100 ) {
+            mensaje = "Para iniciar un negocio de flete, está muy bien este auto";
+        } else {
+            mensaje = "Tienes que usar este auto en el campo, es una máquina de trabajo!";
+        }
+        return this.toString() + '\n' + mensaje;
+    }
+
 
     @Override
     public boolean equals(Object obj) {
@@ -52,10 +58,10 @@ public class Truck extends Vehicle {
     @Override
     public String toString() {
         return "Camión "+
-                "Marca: " + brand +
-                ", Modelo:'" + model +
-                ", Año:=" + year +
-                "Carga Max: " + maxLoad;
+                " Marca: " + this.brand +
+                " Modelo: " + this.model +
+                " Año: " + this.year +
+                " Carga Max: " + this.maxLoad;
 
     }
 
