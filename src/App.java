@@ -2,7 +2,6 @@ import ar.com.ada.collision.subclass.ElectricalVehicle;
 import ar.com.ada.collision.subclass.SportsVehicle;
 import ar.com.ada.collision.subclass.Truck;
 import ar.com.ada.collision.superclass.Vehicle;
-
 public class App {
     public static void main(String[] args) {
 //        Vehicle vehiculo1 = new Vehicle("Puegeot", "Zaraza", 2001);
@@ -33,10 +32,5 @@ public class App {
             System.out.println("Vehículo" + " " + (i+1));
             System.out.println(arrayDeVehiculos[i].technicalSheet());
         }
-
-
-
-
     }
-
 }

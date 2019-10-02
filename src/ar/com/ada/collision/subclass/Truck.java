@@ -27,7 +27,6 @@ public class Truck extends Vehicle {
         return maxLoad;
     }
 
-
     @Override
     public String technicalSheet() {
         String mensaje = " ";
@@ -39,7 +38,6 @@ public class Truck extends Vehicle {
         return this.toString() + '\n' + mensaje;
     }
 
-
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -48,7 +46,6 @@ public class Truck extends Vehicle {
         return this.maxLoad.equals(that.maxLoad) &&
                 super.equals(that);
     }
-
 
     @Override
     public int hashCode(){

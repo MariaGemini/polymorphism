@@ -34,7 +34,7 @@ public class SportsVehicle extends Vehicle {
             mensaje = "Con este auto puede desafiar a cualquiera en la pista";
         } else if (rpm < 600) {
             mensaje = "Si tienes este auto, debe considerar participar en NASCAR";
-        } else if (rpm > 600) {
+        } else {
             mensaje = "¿Eres parte del elenco de Rápidos y Furiosos?";
         }
         return this.toString() + '\n' + mensaje;
