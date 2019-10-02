@@ -39,16 +39,6 @@ public class ElectricalVehicle extends Vehicle {
     }
 
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (!(o instanceof ElectricalVehicle)) return false;
-//        if (!super.equals(o)) return false;
-//        ElectricalVehicle that = (ElectricalVehicle) o;
-//        return getPotency().equals(that.getPotency());
-//    }
-
-
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -68,10 +58,10 @@ public class ElectricalVehicle extends Vehicle {
     @Override
     public String toString() {
         return "Vehículo Deportivo "+
-                "Marca: " + brand + '\'' +
-                ", Modelo:'" + model + '\'' +
-                ", Año:=" + year +
-                "Potencia: " + potency;
+                "Marca: " + this.brand +
+                "Modelo: " + this.model +
+                "Año:" + this.year +
+                "Potencia: " + this.potency;
     }
 
 }
